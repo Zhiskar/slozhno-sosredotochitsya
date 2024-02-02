@@ -18,7 +18,7 @@
   line-height: 100%;
   font-weight: 400;
   text-align: left;
-  padding: var(--padding-page, 10px);
+  /*padding: var(--padding-page, 10px);*/
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
 
@@ -27,9 +27,10 @@
   min-block-size: 668px;
   min-inline-size: 375px;
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr min-content 1fr;
   grid-template-columns: minmax(min-content, max-content);
   justify-content: end;
+  padding: var(--padding-page, 10px);
 }
 
 .header__theme-menu-button {
@@ -154,6 +155,7 @@
   grid-template-rows: repeat(4, minmax(min-content, max-content));
   grid-template-columns: 375px;
   gap: 50px;
+  padding: var(--padding-page, 10px);
 }
 
 .content__title {
@@ -257,6 +259,7 @@
   position: relative;
   align-content: center;
   justify-content: center;
+  padding: var(--padding-page, 10px);
 }
 
 .footer__title {
@@ -292,6 +295,6 @@
   inset-block-start: 0;
 }
 
-*{
+* {
   border: 1px solid red;
 }
