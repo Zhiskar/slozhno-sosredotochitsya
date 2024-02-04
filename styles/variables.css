@@ -20,7 +20,6 @@
 @media (width >= 768px) {
   :root {
     --padding-page: 20px;
-    --title-text-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
   .decorated-zone::before {
@@ -60,16 +59,16 @@
     justify-content: end;
     max-block-size: 100vh;
     min-block-size: 1024px;
-    inline-size: 100%;    
+    inline-size: 100%;
     max-inline-size: 768px;
     padding: var(--padding-page, 20px);
     position: relative;
     margin: auto;
   }
 
-  .header__title {  
-    align-self: center;      
-    font-size: var(--title-text-size);
+  .header__title {
+    align-self: center;
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     font-style: normal;
     font-weight: 700;
     line-height: 82.5%;
@@ -143,7 +142,7 @@
 
   .card-gallery__pic {
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
+    /*grid-template-rows: repeat(3, 1fr);*/
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
   }
@@ -177,6 +176,7 @@
     display: grid;
     grid-template-rows: minmax(min-content, max-content);
     grid-template-columns: minmax(min-content, max-content);
+    font-size: (7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     inline-size: 100%;
     max-inline-size: 768px;
     max-block-size: 100vh;
@@ -213,7 +213,7 @@
     margin: auto;
   }
 
- .header__decoration {    
+  .header__decoration {
     inset-inline-end: 27px;
   }
 
@@ -221,7 +221,7 @@
     justify-self: center;
     align-self: start;
   }
-  
+
   .header__theme-menu-list {
     display: flex;
     flex-direction: row;
@@ -230,6 +230,7 @@
 
   .header__title {
     justify-self: start;
+    font-size: (7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
   .header__text {
@@ -303,7 +304,7 @@
 
   .card-gallery__pic {
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
+    /*grid-template-rows: repeat(3, 1fr);*/
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
   }
@@ -329,7 +330,7 @@
   }
 
   .gallery__pic:nth-child(5) {
-    grid-row: 3;
+    /*grid-row: 3;*/
     grid-column: 2/4;
   }
 
@@ -337,6 +338,7 @@
     display: grid;
     grid-template-rows: minmax(min-content, max-content);
     grid-template-columns: minmax(min-content, max-content);
+    font-size: (7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     inline-size: 100%;
     max-inline-size: 1024px;
     max-block-size: 100vh;

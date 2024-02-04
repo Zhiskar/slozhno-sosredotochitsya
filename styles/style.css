@@ -31,6 +31,7 @@
   min-block-size: 668px;
   inline-size: 100%;
   max-inline-size: 375px;
+  inline-size: 100%;
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
   grid-template-columns: minmax(min-content, max-content);
@@ -70,7 +71,7 @@
 .header__decoration {
   position: absolute;
   top: var(--padding-page, 10px);
-  right: 20px; /*var(--padding-page, 20px);*/
+  right: 27px; /*var(--padding-page, 20px);*/
   color: var(--accent-color, #ff0070);
   text-align: center;
   text-transform: uppercase;
@@ -96,10 +97,7 @@
   justify-self: start;
   color: var(--header-text-color, #db00ff);
   text-shadow: 4px 4px 0px var(--title-shadow-color, #ff0070);
-  font-size: var(
-    --title-text-size,
-    clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem)
-  );
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-style: normal;
   font-weight: 700;
   line-height: 82.5%;
@@ -140,7 +138,7 @@
   font-weight: 700;
   line-height: 23.4px;
   justify-self: center;
-  align-self: center;
+  align-self: end;
   inline-size: max(50%, 355px);
   margin-block-end: 66px;
 }
@@ -152,7 +150,7 @@
 
 .header__theme-menu {
   justify-self: end;
-  align-self: center;
+  align-self: end;
 }
 
 .header__theme-menu-list {
@@ -273,7 +271,7 @@
   grid-template-rows: minmax(min-content, max-content);
   grid-template-columns: minmax(min-content, max-content);
   inline-size: 100%;
-  max-inline-size: 375px;
+  min-inline-size: 375px;
   max-block-size: 100vh;
   min-block-size: 667px;
   position: relative;
