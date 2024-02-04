@@ -9,6 +9,7 @@
   grid-template-columns: minmax(min-content, max-content);
   row-gap: 30px;
   min-inline-size: 375px;
+  /*max-inline-size: 1024px;*/
   inline-size: 100%;
   background-color: var(--main-bg-color, #000028);
   background-image: var(--bg-image, url(../images/cover-image-dark.png));
