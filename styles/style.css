@@ -30,8 +30,7 @@
   max-block-size: 100vh;
   min-block-size: 668px;
   inline-size: 100%;
-  max-inline-size: 375px;
-  inline-size: 100%;
+  max-inline-size: 375px;  
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
   grid-template-columns: minmax(min-content, max-content);

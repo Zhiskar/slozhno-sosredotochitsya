@@ -208,7 +208,7 @@
     grid-template-columns: 1fr;
     row-gap: 50px;
     justify-content: end;
-    padding: var(--padding-page, 10px);
+    padding: var(--padding-page, 20px);
     position: relative;
     margin: auto;
   }
