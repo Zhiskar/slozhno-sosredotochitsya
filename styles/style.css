@@ -114,8 +114,8 @@
   border-inline-start: 1px solid var(--nav-color, #ff0070);
   border-block-end: 1px solid var(--nav-color, #ff0070);
   position: absolute;
-  inset-inline-start: 0/*var(--padding-page, 10px)*/;
-  inset-block-end: 0/*var(--padding-page, 10px)*/;
+  inset-inline-start: 10px;
+  inset-block-end: 10px;
 }
 
 .decorated-zone::after {
@@ -126,8 +126,8 @@
   border-inline-end: 1px solid var(--nav-color, #ff0070);
   border-block-start: 1px solid var(--nav-color, #ff0070);
   position: absolute;
-  inset-inline-end: 0/*var(--padding-page, 10px)*/;
-  inset-block-start: 0/*var(--padding-page, 10px)*/;
+  inset-inline-end: 10px;
+  inset-block-start: 10px;
 }
 
 .title-decor {
@@ -169,7 +169,7 @@
   display: grid;
   grid-template-rows: repeat(4, minmax(min-content, max-content));
   grid-template-columns: minmax(min-content, max-content);
-  row-gap: 50px;  
+  row-gap: 50px;
 }
 
 .content__title {
@@ -183,7 +183,7 @@
 
 .content__text {
   color: var(--text-color, #f1b2ce);
-  line-height: 23.4px;
+  line-height: 25px;
   padding-inline-start: 10px;
   padding-inline-end: 10px;
 }
@@ -275,11 +275,20 @@
   row-gap: 10px;
 }
 
+.gallery-title-decor {
+  inline-size: 375px;
+  padding-inline-start: 10px;
+  padding-inline-end: 10px;
+  background-color: var(--accent-color, #ff0070);
+}
+
 .gallery__pic {
   inline-size: 100%;
   block-size: 100%;
   object-fit: cover;
   object-position: center;
+  padding-inline-start: 10px;
+  padding-inline-end: 10px;
 }
 
 .footer {
@@ -315,8 +324,8 @@
   border-inline-start: 1px solid var(--nav-color, #ff0070);
   border-block-end: 1px solid var(--nav-color, #ff0070);
   position: absolute;
-  inset-inline-start: var(--padding-page, 10px);
-  inset-block-end: var(--padding-page, 10px);
+  inset-inline-start: 10px;
+  inset-block-end: 10px;
 }
 
 .footer__decorated-zone::after {
@@ -327,8 +336,8 @@
   border-inline-end: 1px solid var(--nav-color, #ff0070);
   border-block-start: 1px solid var(--nav-color, #ff0070);
   position: absolute;
-  inset-inline-end: 0/*var(--padding-page, 10px)*/;
-  inset-block-start: 0/*var(--padding-page, 10px)*/;
+  inset-inline-end: 10px;
+  inset-block-start: 10px;
 }
 
 /* * {
