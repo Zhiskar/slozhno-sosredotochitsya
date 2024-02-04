@@ -246,12 +246,13 @@
 
   .header__title {
     justify-self: start;
-    font-size: (7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
   .header__text {
     justify-self: end;
     inline-size: max(50%, 491px);
+    align-self: center;
   }
 
   .content {

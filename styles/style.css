@@ -23,7 +23,7 @@
   line-height: 100%;
   font-weight: 400;
   text-align: left;
-  padding: 10px
+  padding: 10px;
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
 
@@ -246,6 +246,7 @@
   display: grid;
   grid-template-rows: 23px minmax(min-content, max-content);
   grid-template-columns: minmax(min-content, max-content);
+  gap: 10px;
 }
 
 .gallery {
