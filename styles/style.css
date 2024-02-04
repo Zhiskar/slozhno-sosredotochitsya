@@ -7,7 +7,7 @@
       max-content
     );
   grid-template-columns: minmax(min-content, max-content);
-  row-gap: 30px;
+  row-gap: 40px;
   min-inline-size: 375px;
   /*max-inline-size: 1024px;*/
   inline-size: 100%;
@@ -183,7 +183,7 @@
 
 .content__text {
   color: var(--text-color, #f1b2ce);
-  line-height: 24px;
+  line-height: 23.4px;
   padding-inline-start: 10px;
   padding-inline-end: 10px;
 }

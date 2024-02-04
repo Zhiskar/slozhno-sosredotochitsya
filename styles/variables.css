@@ -103,7 +103,7 @@
     inset-inline-start: 20px;
     inset-block-end: 20px;
   }
-  
+
   .decorated-zone::after {
     inset-inline-end: 20px;
     inset-block-start: 20px;
@@ -147,7 +147,7 @@
   }
 
   .content__text {
-    line-height: 24px;
+    line-height: 23.4px;
   }
 
   .what {
@@ -229,7 +229,7 @@
     inset-inline-start: 20px;
     inset-block-end: 20px;
   }
-  
+
   .footer__decorated-zone::after {
     inset-inline-end: 20px;
     inset-block-start: 20px;
@@ -275,7 +275,7 @@
     inset-inline-start: 20px;
     inset-block-end: 20px;
   }
-  
+
   .decorated-zone::after {
     inset-inline-end: 20px;
     inset-block-start: 20px;
@@ -340,7 +340,7 @@
   }
 
   .content__text {
-    line-height: 24px;
+    line-height: 23.4px;
   }
 
   .what {
@@ -437,7 +437,7 @@
     inset-inline-start: 20px;
     inset-block-end: 20px;
   }
-  
+
   .footer__decorated-zone::after {
     inset-inline-end: 20px;
     inset-block-start: 20px;
