@@ -72,8 +72,8 @@
 
 .header__decoration {
   position: absolute;
-  top: var(--padding-page, 10px);
-  right: 27px; /*var(--padding-page, 20px);*/
+  inset-block-start: 10px;
+  inset-inline-end: 20px; /*var(--padding-page, 20px);*/
   color: var(--accent-color, #ff0070);
   text-align: center;
   text-transform: uppercase;
@@ -183,7 +183,7 @@
 
 .content__text {
   color: var(--text-color, #f1b2ce);
-  line-height: 25px;
+  line-height: 24px;
   padding-inline-start: 10px;
   padding-inline-end: 10px;
 }

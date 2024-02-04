@@ -95,26 +95,27 @@
   }
 
   .header__decoration {
-    inset-inline-end: 27px;
+    inset-block-start: 20px;
+    inset-inline-end: 30px;
   }
 
-  .decorated-zone::before {    
+  .decorated-zone::before {
     inset-inline-start: 20px;
     inset-block-end: 20px;
   }
   
-  .decorated-zone::after {    
+  .decorated-zone::after {
     inset-inline-end: 20px;
     inset-block-start: 20px;
   }
 
   .content {
     max-inline-size: 768px;
-    inline-size: 100%;    
-    padding: var(--padding-page, 20px);
+    inline-size: 100%;
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    gap: 80px;    
+    gap: 80px;
     padding-inline-start: 10px;
     padding-inline-end: 10px;
   }
@@ -146,7 +147,7 @@
   }
 
   .content__text {
-    line-height: 25px;    
+    line-height: 24px;
   }
 
   .what {
@@ -179,6 +180,10 @@
     grid-template-rows: repeat(3, minmax(min-content, max-content));
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
+  }
+
+  .gallery-title-decor {
+    inline-size: 100%;
   }
 
   .gallery__pic:first-child {
@@ -220,12 +225,12 @@
     padding-inline-end: 10px;
   }
 
-  .footer__decorated-zone::before {    
+  .footer__decorated-zone::before {
     inset-inline-start: 20px;
     inset-block-end: 20px;
   }
   
-  .footer__decorated-zone::after {    
+  .footer__decorated-zone::after {
     inset-inline-end: 20px;
     inset-block-start: 20px;
   }
@@ -256,21 +261,22 @@
     justify-content: end;
     padding-block-start: 20px;
     padding-inline-start: 20px;
-    padding-inline-end: 20px; 
+    padding-inline-end: 20px;
     position: relative;
     margin: auto;
   }
 
   .header__decoration {
-    inset-inline-end: 27px;
+    inset-block-start: 20px;
+    inset-inline-end: 30px;
   }
 
-  .decorated-zone::before {    
+  .decorated-zone::before {
     inset-inline-start: 20px;
     inset-block-end: 20px;
   }
   
-  .decorated-zone::after {    
+  .decorated-zone::after {
     inset-inline-end: 20px;
     inset-block-start: 20px;
   }
@@ -297,8 +303,7 @@
     align-self: center;
   }
 
-  .content {    
-    padding: var(--padding-page, 20px);
+  .content {
     display: flex;
     flex-direction: column;
     gap: 80px;
@@ -332,6 +337,10 @@
 
   .content__part-title {
     inline-size: 100%;
+  }
+
+  .content__text {
+    line-height: 24px;
   }
 
   .what {
@@ -379,6 +388,10 @@
     grid-template-rows: repeat(3, minmax(min-content, max-content));
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
+  }
+
+  .gallery-title-decor {
+    inline-size: 100%;
   }
 
   .gallery__pic:first-child {
