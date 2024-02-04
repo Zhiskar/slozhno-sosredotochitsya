@@ -4,39 +4,38 @@
   переключая тему
 */
 :root .theme_light {
-  --accent-color: #FF8DCB;
+  --accent-color: #ff8dcb;
   --nav-color: #353430;
   --nav-color-hov: rgb(50 49 45 / 0.4);
-  --main-bg-color: #FFF1F7;
+  --main-bg-color: #fff1f7;
   --text-color: #353430;
-  --header-text-color: #FFC2E6;  
-  --bg-image: url(..images/cover-image-light.png);  
+  --header-text-color: #ffc2e6;
+  --bg-image: url(..images/cover-image-light.png);
   --title-shadow-color: #ff0070;
   --title-text-color: #353430;
 }
-
 
 .page .theme_light {
-  --accent-color: #FF8DCB;
+  --accent-color: #ff8dcb;
   --nav-color: #353430;
   --nav-color-hov: rgb(50 49 45 / 0.4);
-  --main-bg-color: #FFF1F7;
+  --main-bg-color: #fff1f7;
   --text-color: #353430;
-  --header-text-color: #FFC2E6;  
-  --bg-image: url(..images/cover-image-light.png);  
+  --header-text-color: #ffc2e6;
+  --bg-image: url(..images/cover-image-light.png);
   --title-shadow-color: #ff0070;
   --title-text-color: #353430;
 }
 
-.theme_light .header__decoration  {
+.theme_light .header__decoration {
   display: none;
- }
+}
 
 .theme_light .header__theme-menu-button:hover {
   outline: 1px solid var(--nav-color-hov, rgb(50 49 45 / 0.4));
 }
 
-.theme_light .text-shadow:hover {  
+.theme_light .text-shadow:hover {
   border-block-end: var(--text-color, #353430);
 }
 
@@ -47,21 +46,21 @@
 /* Остальные стили */
 
 @media (prefers-color-scheme: light) {
-:root {
-  --accent-color: #FF8DCB;
-  --nav-color: #353430;  
-  --nav-color-hov: rgb(50 49 45 / 0.4);
-  --main-bg-color: #FFF1F7;
-  --text-color: #353430;
-  --header-text-color: #FFC2E6;  
-  --bg-image: url(..images/cover-image-light.png);  
-  --title-shadow-color: #ff0070;
-  --title-text-color: #353430;
-      /* Дублируем переменные светлой темы */    
+  :root {
+    --accent-color: #ff8dcb;
+    --nav-color: #353430;
+    --nav-color-hov: rgb(50 49 45 / 0.4);
+    --main-bg-color: #fff1f7;
+    --text-color: #353430;
+    --header-text-color: #ffc2e6;
+    --bg-image: url(..images/cover-image-light.png);
+    --title-shadow-color: #ff0070;
+    --title-text-color: #353430;
   }
 }
+/* Дублируем переменные светлой темы */
 
-/* Остальные стили */ 
+/* Остальные стили */
 
 /*.page.theme_light {  
 }*/
