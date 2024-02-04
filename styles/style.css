@@ -173,7 +173,7 @@
   color: var(--accent-color, #ff0070);
   font-size: 18px;
   font-weight: 700;
-  line-height: 130%;
+  line-height: 23.4px;
 }
 
 .content__text {
@@ -202,6 +202,9 @@
 
 .content__part-title {
   inline-size: 375px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23.4px;
 }
 
 .how__list-item-subtitle {
