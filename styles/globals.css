@@ -15,9 +15,9 @@ button:focus {
   outline: none;
 }
 
-html {
+/*html {
   background-color: var(--main-color, #000028);
-}
+}*/
 
 body {
   min-inline-size: 375px;

@@ -4,9 +4,10 @@
   display: grid;
   grid-template-rows: minmax(min-content, max-content) auto minmax(min-content, max-content);
   grid-template-columns: minmax(min-content, max-content);
-  row-gap: 50px;
+  row-gap: 30px;
   min-inline-size: 375px;
   inline-size: 100%;
+  background-color: var(--main-bg-color, #000028);
   background-image: var(--bg-image, url(../images/cover-image-dark.png));
   background-position: center;
   background-repeat: no-repeat;
@@ -17,25 +18,27 @@
   font-style: normal;
   line-height: 100%;
   font-weight: 400;
-  text-align: left;
-  /*padding: var(--padding-page, 10px);*/
+  text-align: left;  
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
 
 .header {
   max-block-size: 100vh;
   min-block-size: 668px;
-  min-inline-size: 375px;
+  inline-size: 100%;
+  max-inline-size: 375px;
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
   grid-template-columns: minmax(min-content, max-content);
+  row-gap: 50px;
   justify-content: end;
-  padding: var(--padding-page, 10px);
+  padding: var(--padding-page, 10px);  
   position: relative;
+  margin: auto;
 }
 
 .header__theme-menu-button {
-  color: var(--accent-color, #ff0070);
+  color: var(--nav-color, #ff0070);
   background-color: transparent;
   padding-inline-start: 13px;
   padding-inline-end: 13px;
@@ -45,20 +48,25 @@
 }
 
 .header__theme-menu-button:hover {
-  outline: 1px solid var(--accent-color, #ff0070);
+  outline: 1px solid var(--nav-color-hov, rgb(255 0 112 / 0.4));
 }
 
 .header__theme-menu-button:focus-visible {
-  border-block-end: 1px solid var(--accent-color, #ff0070);
+  border-block-end: 1px solid var(--nav-color, #ff0070);
 }
+
 .header__theme-menu-button:disabled {
+  pointer-events: none;
+}
+
+.header__theme-menu-button_active {
   pointer-events: none;
 }
 
 .header__decoration {
   position: absolute;
-  top: 2px;
-  right: 10px;
+  top: var(--padding-page, 10px);
+  right: 20px;/*var(--padding-page, 20px);*/
   color: var(--accent-color, #ff0070);
   text-align: center;
   text-transform: uppercase;
@@ -74,50 +82,45 @@
   inline-size: 9px;
   block-size: 9px;
   border-radius: 50%;
-  box-shadow: 0 0 4px 3px var(--accent-color, #ff0070);
-  background-color: var(--accent-color, #ff0070);
+  box-shadow: 0 0 4px 3px var(--nav-color, #ff0070);
+  background-color: var(--nav-color, #ff0070);
   margin-inline-start: 10px;
   margin-block-end: 0.05em;
 }
 
 .header__title {
-  display: block;
   justify-self: start;
-  color: var(--title-text-color, #db00ff);
-  text-shadow: 4px 4px 0px var(--accent-color, #ff0070);
-  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  color: var(--header-text-color, #db00ff);
+  text-shadow: 4px 4px 0px var(--title-shadow-color, #ff0070);
+  font-size: var(--title-text-size, clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem));
   font-style: normal;
   font-weight: 700;
   line-height: 82.5%;
   word-break: normal;
 }
 
-/*.decorated-zone {
-  position: relative;
-}*/
-
-.corners::before {
+.decorated-zone::before {
   display: block;
   content: "";
   inline-size: 25px;
   block-size: 25px;
-  border-inline-start: 1px solid var(--accent-color, #ff0070);
-  border-block-end: 1px solid var(--accent-color, #ff0070);
+  border-inline-start: 1px solid var(--nav-color, #ff0070);
+  border-block-end: 1px solid var(--nav-color, #ff0070);
   position: absolute;
-  inset-inline-start: 0;
-  inset-block-end: 0;
+  inset-inline-start: var(--padding-page, 10px);
+  inset-block-end: var(--padding-page, 10px);
 }
 
-.corners::after {
+.decorated-zone::after {
   display: block;
   content: "";
   inline-size: 25px;
   block-size: 25px;
-  border-inline-end: 1px solid var(--accent-color, #ff0070);
-  border-block-start: 1px solid var(--accent-color, #ff0070);
+  border-inline-end: 1px solid var(--nav-color, #ff0070);
+  border-block-start: 1px solid var(--nav-color, #ff0070);
   position: absolute;
-  inset-inline-end: 0;
-  inset-block-start: 0;
+  inset-inline-end: var(--padding-page, 10px);
+  inset-block-start: var(--padding-page, 10px);
 }
 
 .title-decor {
@@ -153,12 +156,13 @@
 
 .content {
   color: var(--main-color, #000028);
-  inline-size: 375px;
+  max-inline-size: 375px;
+  inline-size: 100%;
   display: grid;
   grid-template-rows: repeat(4, minmax(min-content, max-content));
-  grid-template-columns: 375px;
-  gap: 50px;
-  padding: var(--padding-page, 10px);
+  grid-template-columns: minmax(min-content, max-content);
+  row-gap: 50px;
+  padding: var(--padding-page, 10px);  
 }
 
 .content__title {
@@ -177,11 +181,26 @@
   text-shadow: 2px 2px 0px var(--accent-color, #ff0070);
 }
 
+.text-shadow:hover {  
+  border-block-end: var(--text-color, #F1B2CE);
+}
+
+.text-shadow:focus-visible {
+  outline: 1px solid var(--text-color, #F1B2CE);
+}
+
+.header__theme-menu-button_active {
+  pointer-events: none;
+}
+
+
+
+
 .content__part {
   display: grid;
-  grid-template-rows: 23px 1fr;
+  grid-template-rows: minmax(min-content, max-content) 1fr;
   grid-template-columns: fit-content;
-  gap: 10px;
+  row-gap: 10px;
 }
 
 .content__part-title {
@@ -196,38 +215,30 @@
 
 .why {
   display: grid;
-  grid-template-rows: fit-content minmax(min-content, max-content) minmax(
-      min-content,
-      max-content
-    );
+  grid-template-rows: fit-content repeat(2, minmax(min-content, max-content));
   grid-template-columns: minmax(min-content, max-content);
-  gap: 20px;
+  row-gap: 20px;
 }
 
 .what {
   display: grid;
-  grid-template-rows: fit-content minmax(min-content, max-content) minmax(
-      min-content,
-      max-content
-    );
+  grid-template-rows: fit-content repeat(2, minmax(min-content, max-content));
   grid-template-columns: minmax(min-content, max-content);
-  gap: 20px;
+  row-gap: 20px;
 }
 
 .how {
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: repeat(2, minmax(min-content, max-content));
   grid-template-columns: minmax(min-content, max-content);
-  gap: 20px;
-  padding-inline-start: var(--padding-page, 10px);
-  padding-inline-end: var(--padding-page, 10px);
+  row-gap: 20px;  
 }
 
 .how__list {
   display: grid;
   grid-template-rows: repeat(5, minmax(min-content, max-content));
   grid-template-columns: minmax(min-content, max-content);
-  gap: 20px;
+  row-gap: 20px;
   max-inline-size: 375px 100%;
 }
 .how__list-item {
@@ -238,11 +249,16 @@
 
 .gallery {
   display: grid;
-  grid-template-rows: 23px repeat(4, 1fr);
+  grid-template-rows: 23px minmax(min-content, max-content);
   grid-template-columns: minmax(min-content, max-content);
-  gap: 10px;
-  padding-inline-start: var(--padding-page, 10px);
-  padding-inline-end: var(--padding-page, 10px);
+  row-gap: 10px;  
+}
+
+.card-gallery__pic {
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: minmax(min-content, max-content);
+  row-gap: 10px;  
 }
 
 .gallery__pic {
@@ -256,48 +272,50 @@
   display: grid;
   grid-template-rows: minmax(min-content, max-content);
   grid-template-columns: minmax(min-content, max-content);
-  min-inline-size: 375px;
+  inline-size: 100%;
+  max-inline-size: 375px;
   max-block-size: 100vh;
   min-block-size: 667px;
   position: relative;
   align-content: center;
   justify-content: center;
-   padding: var(--padding-page, 10px);
+  padding: var(--padding-page, 10px);
+ 
 }
 
 .footer__title {
-  color: var(--title-text-color, #db00ff);
-  text-shadow: 2px 2px 0px var(--accent-color, #ff0070);
+  color: var(--header-text-color, #db00ff);
+  text-shadow: 2px 2px 0px var(--title-shadow-color, #ff0070);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-style: normal;
   font-weight: 700;
   line-height: 82.5%; /* 95.7px */
 }
 
-.footer-corners::before {
+.decorated-zone::before {
   display: block;
   content: "";
   inline-size: 25px;
   block-size: 25px;
-  border-inline-start: 1px solid var(--accent-color, #ff0070);
-  border-block-end: 1px solid var(--accent-color, #ff0070);
+  border-inline-start: 1px solid var(--nav-color, #ff0070);
+  border-block-end: 1px solid var(--nav-color, #ff0070);
   position: absolute;
-  inset-inline-start: 0;
-  inset-block-end: 0;
+  inset-inline-start: var(--padding-page, 10px);
+  inset-block-end: var(--padding-page, 10px);
 }
 
-.footer-corners::after {
+.decorated-zone::after {
   display: block;
   content: "";
   inline-size: 25px;
   block-size: 25px;
-  border-inline-end: 1px solid var(--accent-color, #ff0070);
-  border-block-start: 1px solid var(--accent-color, #ff0070);
+  border-inline-end: 1px solid var(--nav-color, #ff0070);
+  border-block-start: 1px solid var(--nav-color, #ff0070);
   position: absolute;
-  inset-inline-end: 0;
-  inset-block-start: 0;
+  inset-inline-end: var(--padding-page, 10px);
+  inset-block-start: var(--padding-page, 10px);
 }
 
-* {
+/* * {
   border: 1px solid red;
-}
+}*/
