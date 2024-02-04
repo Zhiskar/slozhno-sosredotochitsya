@@ -23,6 +23,7 @@
   line-height: 100%;
   font-weight: 400;
   text-align: left;
+  padding: 10px
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
 
@@ -36,7 +37,7 @@
   grid-template-columns: minmax(min-content, max-content);
   row-gap: 50px;
   justify-content: end;
-  padding: var(--padding-page, 10px);
+  /*padding: var(--padding-page, 10px);*/
   position: relative;
   margin: auto;
 }
@@ -111,8 +112,8 @@
   border-inline-start: 1px solid var(--nav-color, #ff0070);
   border-block-end: 1px solid var(--nav-color, #ff0070);
   position: absolute;
-  inset-inline-start: var(--padding-page, 10px);
-  inset-block-end: var(--padding-page, 10px);
+  inset-inline-start: 0/*var(--padding-page, 10px)*/;
+  inset-block-end: 0/*var(--padding-page, 10px)*/;
 }
 
 .decorated-zone::after {
@@ -123,8 +124,8 @@
   border-inline-end: 1px solid var(--nav-color, #ff0070);
   border-block-start: 1px solid var(--nav-color, #ff0070);
   position: absolute;
-  inset-inline-end: var(--padding-page, 10px);
-  inset-block-start: var(--padding-page, 10px);
+  inset-inline-end: 0/*var(--padding-page, 10px)*/;
+  inset-block-start: 0/*var(--padding-page, 10px)*/;
 }
 
 .title-decor {
@@ -166,7 +167,7 @@
   grid-template-rows: repeat(4, minmax(min-content, max-content));
   grid-template-columns: minmax(min-content, max-content);
   row-gap: 50px;
-  padding: var(--padding-page, 10px);
+  /*padding: var(--padding-page, 10px);*/
 }
 
 .content__title {
@@ -256,7 +257,7 @@
 
 .card-gallery__pic {
   display: grid;
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-rows: repeat(5, minmax(min-content, max-content));
   grid-template-columns: minmax(min-content, max-content);
   row-gap: 10px;
 }
@@ -279,7 +280,7 @@
   position: relative;
   align-content: center;
   justify-content: center;
-  padding: var(--padding-page, 10px);
+  /*padding: var(--padding-page, 10px);*/
 }
 
 .footer__title {
@@ -311,8 +312,8 @@
   border-inline-end: 1px solid var(--nav-color, #ff0070);
   border-block-start: 1px solid var(--nav-color, #ff0070);
   position: absolute;
-  inset-inline-end: var(--padding-page, 10px);
-  inset-block-start: var(--padding-page, 10px);
+  inset-inline-end: 0/*var(--padding-page, 10px)*/;
+  inset-block-start: 0/*var(--padding-page, 10px)*/;
 }
 
 /* * {
