@@ -69,7 +69,7 @@
     max-inline-size: 768px;
     padding-block-start: 20px;
     padding-inline-start: 20px;
-    padding-inline-end: 20px;    
+    padding-inline-end: 20px;
     position: relative;
     margin: auto;
   }
@@ -433,12 +433,12 @@
     padding-inline-end: 10px;
   }
 
-  .footer__decorated-zone::before {    
+  .footer__decorated-zone::before {
     inset-inline-start: 20px;
     inset-block-end: 20px;
   }
   
-  .footer__decorated-zone::after {    
+  .footer__decorated-zone::after {
     inset-inline-end: 20px;
     inset-block-start: 20px;
   }
