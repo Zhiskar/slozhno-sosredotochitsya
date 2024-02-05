@@ -154,7 +154,8 @@
   }
 
   .content__text {
-    line-height: 23px;
+    line-height: 23.4px;
+    padding: 0;
   }
 
   .what {
@@ -348,7 +349,8 @@
   }
 
   .content__text {
-    line-height: 23px;
+    line-height: 23.4px;
+    padding: 0;
   }
 
   .what {
