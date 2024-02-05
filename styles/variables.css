@@ -188,21 +188,24 @@
 
   .card-gallery__pic {
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, minmax(min-content, max-content));
+    grid-template-columns: repeat(3, minmax(min-content, max-content));
     row-gap: 20px;
     column-gap: 20px;
   }
 
   .gallery {
     display: grid;
-    grid-template-rows: 23px 1fr;
+    grid-template-rows: 23px minmax(min-content, max-content);
     grid-template-columns: 1fr;
     row-gap: 20px;
   }
 
   .gallery-title-decor {
+    display: block;
     inline-size: 100%;
+    padding-inline-start: 20px;
+    padding-inline-end: 20px;
   }
 
   .gallery__pic:first-child {
@@ -412,21 +415,24 @@
 
   .gallery {
     display: grid;
-    grid-template-rows: 23px 1fr;
+    grid-template-rows: 23px minmax(min-content, max-content);
     grid-template-columns: 1fr;
     row-gap: 20px;
   }
 
   .card-gallery__pic {
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, minmax(min-content, max-content));
+    grid-template-columns: repeat(3, minmax(min-content, max-content));
     row-gap: 20px;
     column-gap: 20px;
   }
 
   .gallery-title-decor {
+    display: block;
     inline-size: 100%;
+    padding-inline-start: 20px;
+    padding-inline-end: 20px;
   }
 
   .gallery__pic:first-child {
