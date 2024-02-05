@@ -51,7 +51,7 @@
         max-content
       );
     grid-template-columns: minmax(min-content, max-content);
-    row-gap: 40px;
+    row-gap: 60px;
     min-inline-size: 376px;
     inline-size: 100%;
     max-inline-size: 768px;
@@ -253,7 +253,7 @@
         max-content
       );
     grid-template-columns: minmax(min-content, max-content);
-    row-gap: 40px;
+    row-gap: 60px;
     min-inline-size: 1024px;
     inline-size: 100%;
   }

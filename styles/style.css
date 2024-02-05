@@ -279,7 +279,6 @@
 }
 
 .card-gallery__pic {
-  max-block-size: 1366px;
   display: grid;
   grid-template-rows: repeat(5, minmax(min-content, max-content));
   grid-template-columns: minmax(min-content, max-content);
