@@ -27,7 +27,7 @@
   border-block-end: var(--text-color, #353430);
 }
 
-.text-shadow:focus-visible {
+.theme_light .text-shadow:focus-visible {
   outline: 1px solid var(--text-color, #353430);
 }
 
