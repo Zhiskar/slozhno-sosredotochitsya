@@ -6,23 +6,10 @@
   box-sizing: border-box;
 }
 
-:focus {
-  border: none;
-}
-
-a:focus,
-button:focus {
-  outline: none;
-}
-
-/*html {
-  background-color: var(--main-color, #000028);
-}*/
-
 body {
   min-inline-size: 375px;
   max-inline-size: 1440px;
-  margin: 0;
+  margin: 0 auto;
 }
 
 h1,
@@ -52,5 +39,4 @@ a {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
-  text-decoration: none;
 }
