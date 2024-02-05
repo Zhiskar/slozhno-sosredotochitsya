@@ -3,7 +3,7 @@
   и их переопределение под различные устройства
 */
 
-/*:root {
+:root {
   --accent-color: #ff0070;
   --nav-color: #ff0070;
   --nav-color-hov: rgb(255, 0, 112 / 0.4);
@@ -14,7 +14,7 @@
   --bg-image: url(../images/cover-image-dark.png);
   --title-shadow-color: #ff0070;
   --title-text-color: #000028;
-}*/
+}
 
 @media (width >= 376px) {
   :root {
@@ -43,7 +43,7 @@
 }
 
 @media (375px < width <= 768px) {
-  .page {    
+  .page {
     display: flex;
     flex-direction: column;
     gap: 60px;
