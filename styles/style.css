@@ -286,6 +286,7 @@
 }
 
 .gallery-title-decor {
+  margin-inline-start: 10px;
   inline-size: 375px;
   padding-inline-start: 10px;
   padding-inline-end: 10px;
