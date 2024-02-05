@@ -191,6 +191,13 @@
     column-gap: 20px;
   }
 
+  .gallery {
+    display: grid;
+    grid-template-rows: minmax(min-content, max-content) 1fr;
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+
   .gallery-title-decor {
     inline-size: 100%;
   }
@@ -397,6 +404,13 @@
     display: grid;
     grid-template-rows: minmax(min-content, max-content) 1fr;
     grid-template-columns: fit-content;
+    row-gap: 20px;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-rows: minmax(min-content, max-content) 1fr;
+    grid-template-columns: 1fr;
     row-gap: 20px;
   }
 
