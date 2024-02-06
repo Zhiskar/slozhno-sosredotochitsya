@@ -16,7 +16,7 @@
   --title-text-color: #000028;
 }
 
-@media (width >= 376px) {
+/*@media (width >= 376px) {
   :root {
     --padding-page: 10px;
   }
@@ -39,8 +39,8 @@
   .footer__decorated-zone::after {
     inset-inline-end: var(--padding-page, 20px);
     inset-block-start: var(--padding-page, 20px);
-  }*/
-}
+  }
+}*/
 
 @media (375px < width <= 768px) {
   .page {
