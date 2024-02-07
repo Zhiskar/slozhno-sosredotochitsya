@@ -1,19 +1,11 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  /*display: grid;
-  grid-template-rows: minmax(min-content, max-content) auto minmax(
-      min-content,
-      max-content
-    );
-  grid-template-columns: minmax(min-content, max-content);
-  row-gap: 40px;*/
   display: flex;
   flex-direction: column;
   gap: 40px;
   justify-content: center;
   min-inline-size: 375px;
-  /*max-inline-size: 1024px;*/
   inline-size: 100%;
   background-color: var(--main-bg-color, #000028);
   background-image: var(--bg-image, url(../images/cover-image-dark.png));
@@ -28,7 +20,6 @@
   font-weight: 400;
   text-align: left;
   position: relative;
-  /*padding: 10px;*/
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
 
@@ -135,7 +126,6 @@
   inset-block-start: 10px;
 }
 
-
 .header__theme-menu {
   justify-self: end;
   align-self: center;
@@ -168,18 +158,13 @@
   line-height: 23.4px;
 }
 
-
 .content {
   color: var(--main-color, #000028);
   min-inline-size: 375px;
   inline-size: 100%;
-  /*display: grid;
-  grid-template-rows: repeat(4, minmax(min-content, max-content));
-  grid-template-columns: minmax(min-content, max-content);
-  row-gap: 50px;*/
   display: flex;
   flex-direction: column;
-  gap: 50px;  
+  gap: 50px;
   padding-inline-start: var(--padding-page, 10px);
   padding-inline-end: var(--padding-page, 10px);
 }
@@ -189,15 +174,11 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 23.4px;
-  /*padding-inline-start: 10px;
-  padding-inline-end: 10px;*/
 }
 
 .content__text {
   color: var(--text-color, #f1b2ce);
   line-height: 23.4px;
-  /*padding-inline-start: 10px;
-  padding-inline-end: 10px;*/
 }
 
 .text__shadow {
@@ -216,118 +197,68 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  /*display: grid;
-  grid-template-rows: minmax(min-content, max-content) 1fr;
-  grid-template-columns: fit-content;
-  row-gap: 10px;
-  padding-inline-start: 10px;
-  padding-inline-end: 10px;*/
 }
 
 .content__part-title {
   font-size: 18px;
   font-weight: 700;
   line-height: 23.4px;
-  /*padding-inline-start: 10px;
-  padding-inline-end: 10px;*/
 }
 
 .how__list-item-subtitle {
   line-height: 23.4px;
   font-weight: 400;
-  /*max-inline-size: 375px 100%;
-  padding-inline-start: 10px;
-  padding-inline-end: 10px;*/
 }
 
 .why {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  /*display: grid;
-  grid-template-rows: fit-content repeat(2, minmax(min-content, max-content));
-  grid-template-columns: minmax(min-content, max-content);
-  row-gap: 20px;*/
 }
 
 .what {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  /*display: grid;
-  grid-template-rows: fit-content repeat(2, minmax(min-content, max-content));
-  grid-template-columns: minmax(min-content, max-content);
-  row-gap: 20px;*/
 }
 
 .how {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  /*display: grid;
-  grid-template-rows: repeat(2, minmax(min-content, max-content));
-  grid-template-columns: minmax(min-content, max-content);
-  row-gap: 20px;*/
 }
 
 .how__list {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  /*display: grid;
-  grid-template-rows: repeat(5, minmax(min-content, max-content));
-  grid-template-columns: minmax(min-content, max-content);
-  row-gap: 20px;
-  max-inline-size: 375px 100%;*/
 }
 
 .how-content__part {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  /*display: grid;
-  grid-template-rows: minmax(min-content, max-content) 1fr;
-  grid-template-columns: fit-content;
-  row-gap: 20px;
-  padding-inline-start: 10px;
-  padding-inline-end: 10px;*/
 }
 
 .how__list-item {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  /*display: grid;
-  grid-template-rows: 23px minmax(min-content, max-content);
-  grid-template-columns: minmax(min-content, max-content);
-  gap: 10px;*/
 }
 
 .gallery {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  /*display: grid;
-  grid-template-rows: 23px minmax(min-content, max-content);
-  grid-template-columns: minmax(min-content, max-content);
-  row-gap: 10px;*/
 }
 
 .card-gallery__pic {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  /*display: grid;
-  grid-template-rows: repeat(5, minmax(min-content, max-content));
-  grid-template-columns: 1fr;
-  row-gap: 10px;*/
 }
 
 .gallery-title-decor {
-  /*margin-inline-start: 10px;
-  inline-size: 375px;
-  padding-inline-start: 10px;
-  padding-inline-end: 10px;*/
   background-color: var(--accent-color, #ff0070);
 }
 
@@ -336,14 +267,9 @@
   block-size: 100%;
   object-fit: cover;
   object-position: center;
-  /*padding-inline-start: 10px;
-  padding-inline-end: 10px;*/
 }
 
 .footer {
-  /*display: grid;
-  grid-template-rows: minmax(min-content, max-content);
-  grid-template-columns: minmax(min-content, max-content);*/
   display: flex;
   inline-size: 100%;
   min-inline-size: 375px;
@@ -357,7 +283,7 @@
   padding-block-end: var(--padding-page, 10px);
 }
 
-.footer__title {  
+.footer__title {
   color: var(--header-text-color, #db00ff);
   text-shadow: 2px 2px 0px var(--accent-color, #ff8dcb);
   font-size: var(--title-size, clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem));
@@ -390,12 +316,8 @@
   inset-block-start: 10px;
 }
 
-/* * {
-  border: 1px solid red;
-}*/
-
 @media (375px < width <= 768px) {
-  .page {    
+  .page {
     display: flex;
     flex-direction: column;
     gap: 60px;
@@ -406,7 +328,7 @@
   .header {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: 1fr;    
+    grid-template-columns: 1fr;
     justify-content: space-between;
     max-block-size: 100vh;
     min-block-size: 1024px;
@@ -587,11 +509,8 @@
 
   .footer {
     display: grid;
-    /*grid-template-rows: minmax(min-content, max-content);
-    grid-template-columns: minmax(min-content, max-content);*/
     font-size: (7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     inline-size: 100%;
-    /*max-inline-size: 768px;*/
     max-block-size: 100vh;
     min-block-size: 1024px;
     justify-content: center;
@@ -601,10 +520,13 @@
     padding-inline-end: var(--padding-page, 20px);
   }
 
-  .footer__title {  
+  .footer__title {
     color: var(--header-text-color, #db00ff);
     text-shadow: 2px 2px 0px var(--accent-color);
-    font-size: var(--title-size, clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem));
+    font-size: var(
+      --title-size,
+      clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem)
+    );
     font-style: normal;
     font-weight: 700;
     line-height: 82.5%; /* 95.7px */
@@ -625,15 +547,7 @@
 
 @media (768px < width <=1024px) {
   .page {
-    /*display: grid;
-    grid-template-rows: minmax(min-content, max-content) auto minmax(
-        min-content,
-        max-content
-      );
-    grid-template-columns: minmax(min-content, max-content);
-    row-gap: 60px;*/
     min-inline-size: 768px;
-    /*inline-size: 100%;*/
     display: flex;
     flex-direction: column;
     gap: 60px;
@@ -647,7 +561,7 @@
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(2, 1fr);
-    row-gap: 50px;    
+    row-gap: 50px;
     align-content: space-between;
     padding-block-start: var(--padding-page, 20px);
     padding-inline-start: var(--padding-page, 20px);
@@ -678,7 +592,7 @@
     align-self: start;
     padding-block-start: 0;
   }
-  
+
   .header__theme-menu-list {
     display: flex;
     flex-direction: row;
@@ -688,21 +602,24 @@
   .header__title {
     justify-self: start;
     align-self: center;
-    font-size: var(--title-size, clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem));
+    font-size: var(
+      --title-size,
+      clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem)
+    );
     grid-row: 2;
     grid-column: 1/3;
     padding-block-end: 20px;
     position: relative;
-    inset-inline-start: -20px;    
+    inset-inline-start: -20px;
   }
 
   .header__text {
     grid-row: 3;
     grid-column: 2/3;
-    justify-self: end;    
+    justify-self: end;
     align-self: start;
-    position: relative;    
-    inset-block-start: 10px; 
+    position: relative;
+    inset-block-start: 10px;
   }
 
   .header__text-paragraph {
@@ -863,10 +780,13 @@
     padding-inline-end: var(--padding-page, 20px);
   }
 
-  .footer__title {  
+  .footer__title {
     color: var(--header-text-color, #db00ff);
     text-shadow: 2px 2px 0px var(--accent-color);
-    font-size: var(--title-size, clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem));;
+    font-size: var(
+      --title-size,
+      clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem)
+    );
     font-style: normal;
     font-weight: 700;
     line-height: 82.5%; /* 95.7px */
