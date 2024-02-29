@@ -1,6 +1,8 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
+  margin-inline-start: auto;
+  margin-inline-end: auto;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -602,6 +604,7 @@
   .header__title {
     justify-self: start;
     align-self: center;
+    text-shadow: 4px 4px 0px var(--title-shadow-color, #ff0070);
     font-size: var(
       --title-size,
       clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem)
@@ -782,7 +785,7 @@
 
   .footer__title {
     color: var(--header-text-color, #db00ff);
-    text-shadow: 2px 2px 0px var(--accent-color);
+    text-shadow: 2px 2px 0px var(--title-shadow-color, #ff0070);
     font-size: var(
       --title-size,
       clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem)
